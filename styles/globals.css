@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0b0b0b;
+  --bg2: #101010;
+  --bg3: #161616;
+  --border: #1e1e1e;
+  --border2: #2a2a2a;
+  --text: #e2e2e2;
+  --text2: #888;
+  --text3: #444;
+  --accent: #b8d4c8;
+  --accent2: #7eb8a4;
+  --warn: #d4a574;
+  --danger: #d47474;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+html, body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 14px; line-height: 1.6; min-height: 100vh; }
+
+input, textarea, select {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  padding: 10px 12px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.15s;
+}
+input:focus, textarea:focus, select:focus { border-color: var(--accent2); }
+textarea { resize: vertical; min-height: 100px; line-height: 1.6; }
+select option { background: var(--bg3); }
+
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; border: none; transition: all 0.15s; }
+button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.5; } }
+
+.animate-in { animation: fadeIn 0.3s ease both; }

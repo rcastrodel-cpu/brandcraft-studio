@@ -1,0 +1,19 @@
+{
+  "name": "brandcraft-studio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "@anthropic-ai/sdk": "^0.24.3",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
